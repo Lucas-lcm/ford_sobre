@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Metadados básicos: codificação e responsividade (Aula 13) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Metadados de SEO (Aula 03) -->
+  <title>Projeto Ford Enter | Programa de formação em desenvolvimento web</title>
+  <meta name="description"
+    content="Página-base do projeto Ford Enter: o que é o programa, a trilha de aprendizagem e como clonar este repositório com Git.">
+  <meta name="author" content="Turma Ford Enter">
+
+  <!-- Fontes externas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Folha de estilos do projeto (CSS externo, Aula 07) -->
+  <link rel="stylesheet" href="style_sobre_ford.css">
+</head>
+
+<body>
+
+  <!-- ===== Cabeçalho e navegação ===== -->
+  <header class="cabecalho">
+    <div class="container cabecalho__conteudo">
+      <a class="marca" href="sobre_ford.html">
+        <span class="marca__oval">Ford</span>
+        <span class="marca__texto">Enter</span>
+      </a>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <ul class="menu__lista">
+          <li><a href="#programa">O programa</a></li>
+          <li><a href="#trilha">Trilha</a></li>
+          <li><a href="#projeto">Projeto final</a></li>
+          <li><a href="#git">Usar o repositório</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Destaque (hero) ===== -->
+    <section class="hero">
+      <div class="container hero__grade">
+
+        <div class="hero__texto">
+          <p class="hero__chamada">Formação em desenvolvimento web</p>
+          <h1 class="hero__titulo">Um curso, um projeto, um repositório que cresce a cada aula.</h1>
+          <p class="hero__descricao">
+            O Ford Enter é um programa de capacitação em tecnologia que leva pessoas sem experiência prévia
+            até a construção de uma aplicação web completa. Este repositório é o ponto de partida:
+            copie-o para a sua máquina e continue o desenvolvimento a partir daqui.
+          </p>
+
+          <div class="hero__acoes">
+            <a class="botao botao--principal" href="#git">Como clonar o projeto</a>
+            <a class="botao botao--secundario" href="#trilha">Ver a trilha completa</a>
+          </div>
+        </div>
+
+        <!-- Bloco que imita um terminal: o comando é o próprio "cartão de visitas" da aula -->
+        <div class="terminal" aria-label="Exemplo de uso do terminal">
+          <div class="terminal__barra">
+            <span class="terminal__ponto"></span>
+            <span class="terminal__ponto"></span>
+            <span class="terminal__ponto"></span>
+            <span class="terminal__nome">bash — projeto-ford-enter</span>
+          </div>
+          <pre class="terminal__corpo"><code><span class="prompt">aluno@enter:~$</span> git clone https://github.com/SEU-USUARIO/projeto-ford-enter.git
+<span class="saida">Cloning into 'projeto-ford-enter'...</span>
+<span class="saida">Receiving objects: 100% (18/18), done.</span>
+
+<span class="prompt">aluno@enter:~$</span> cd projeto-ford-enter
+<span class="prompt">aluno@enter:~$</span> git log --oneline
+<span class="saida">a1b2c3d Estrutura inicial da pagina</span></code></pre>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== O programa ===== -->
+    <section class="secao" id="programa">
+      <div class="container">
+        <h2 class="secao__titulo">O que é o Ford Enter</h2>
+        <p class="secao__intro">
+          Uma iniciativa de formação gratuita que combina aulas práticas, acompanhamento de instrutores
+          e um projeto real construído do começo ao fim pela turma.
+        </p>
+
+        <ul class="cartoes">
+          <li class="cartao">
+            <h3 class="cartao__titulo">Aprender fazendo</h3>
+            <p>Cada conteúdo novo entra direto no projeto da turma. Nada de exercício solto: o que
+              você estuda hoje aparece na página amanhã.</p>
+          </li>
+          <li class="cartao">
+            <h3 class="cartao__titulo">Ferramentas de mercado</h3>
+            <p>Terminal, Git, GitHub, VS Code e publicação na nuvem. O mesmo fluxo que uma equipe de
+              desenvolvimento usa no dia a dia.</p>
+          </li>
+          <li class="cartao">
+            <h3 class="cartao__titulo">Portfólio desde o início</h3>
+            <p>Ao final do programa, o histórico de commits mostra a sua evolução e o projeto publicado
+              vira o primeiro item do seu portfólio.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Trilha de aprendizagem ===== -->
+    <section class="secao secao--clara" id="trilha">
+      <div class="container">
+        <h2 class="secao__titulo">A trilha, módulo a módulo</h2>
+        <p class="secao__intro">
+          A sequência é cumulativa: cada módulo usa o que foi construído no anterior.
+        </p>
+
+        <ol class="trilha">
+          <li class="trilha__etapa">
+            <span class="trilha__numero">01</span>
+            <div>
+              <h3 class="trilha__titulo">Front-end: HTML e CSS</h3>
+              <p>Tags, HTML semântico, acessibilidade, prototipagem, box model, posicionamento,
+                Flexbox, CSS Grid e design responsivo.</p>
+            </div>
+          </li>
+          <li class="trilha__etapa">
+            <span class="trilha__numero">02</span>
+            <div>
+              <h3 class="trilha__titulo">Versionamento e publicação</h3>
+              <p>Git e GitHub no fluxo de trabalho real: clonar, versionar, enviar alterações e
+                publicar o site para o mundo.</p>
+            </div>
+          </li>
+          <li class="trilha__etapa">
+            <span class="trilha__numero">03</span>
+            <div>
+              <h3 class="trilha__titulo">Back-end com Python</h3>
+              <p>Lógica de programação, orientação a objetos e construção de uma API própria para
+                servir os dados da aplicação.</p>
+            </div>
+          </li>
+          <li class="trilha__etapa">
+            <span class="trilha__numero">04</span>
+            <div>
+              <h3 class="trilha__titulo">JavaScript e React</h3>
+              <p>Interatividade no navegador, componentes, rotas e consumo da API criada no módulo
+                anterior.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Projeto final ===== -->
+    <section class="secao" id="projeto">
+      <div class="container projeto">
+        <div class="projeto__texto">
+          <h2 class="secao__titulo">O projeto da turma: catálogo de veículos</h2>
+          <p>
+            Todo o curso gira em torno de uma única aplicação. Ela começa como uma página estática
+            com a lista de modelos, ganha interatividade com JavaScript, passa a buscar os dados de
+            uma API feita pela própria turma e termina como uma aplicação em React.
+          </p>
+          <p>
+            Este repositório é a semente desse projeto. Clone agora e, a cada aula, traga as
+            novidades com <code class="codigo">git pull</code>.
+          </p>
+        </div>
+
+        <table class="tabela">
+          <caption>Evolução prevista do catálogo</caption>
+          <thead>
+            <tr>
+              <th scope="col">Etapa</th>
+              <th scope="col">Tecnologia</th>
+              <th scope="col">Resultado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Catálogo estático</td>
+              <td>HTML + CSS</td>
+              <td>Página publicada</td>
+            </tr>
+            <tr>
+              <td>Simulador de financiamento</td>
+              <td>JavaScript</td>
+              <td>Cálculo no navegador</td>
+            </tr>
+            <tr>
+              <td>API de veículos</td>
+              <td>Python + FastAPI</td>
+              <td>Dados servidos por rota</td>
+            </tr>
+            <tr>
+              <td>Aplicação completa</td>
+              <td>React</td>
+              <td>Front-end consumindo a API</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== Instruções de Git ===== -->
+    <section class="secao secao--escura" id="git">
+      <div class="container">
+        <h2 class="secao__titulo">Trazendo este projeto para a sua máquina</h2>
+        <p class="secao__intro">
+          Abra o terminal na pasta onde você guarda seus projetos e siga os passos abaixo.
+        </p>
+
+        <div class="passos">
+
+          <article class="passo">
+            <h3 class="passo__titulo">1. Copiar o repositório</h3>
+            <p>O <code class="codigo">git clone</code> baixa o projeto inteiro, com todo o histórico de
+              versões, e cria uma pasta com o nome do repositório.</p>
+            <pre class="bloco-codigo"><code>git clone https://github.com/SEU-USUARIO/projeto-ford-enter.git
+cd projeto-ford-enter</code></pre>
+          </article>
+
+          <article class="passo">
+            <h3 class="passo__titulo">2. Conferir onde você está</h3>
+            <p>Antes de mexer em qualquer arquivo, veja a situação do repositório e o histórico já
+              existente.</p>
+            <pre class="bloco-codigo"><code>git status
+git log --oneline</code></pre>
+          </article>
+
+          <article class="passo">
+            <h3 class="passo__titulo">3. Atualizar durante a aula</h3>
+            <p>Quando o instrutor enviar uma alteração, o <code class="codigo">git pull</code> traz as
+              novidades para a sua cópia local sem apagar o que já existe.</p>
+            <pre class="bloco-codigo"><code>git pull origin main</code></pre>
+          </article>
+
+          <article class="passo">
+            <h3 class="passo__titulo">4. Registrar o seu trabalho</h3>
+            <p>Depois de editar os arquivos, salve a sua versão no histórico com uma mensagem que
+              explique o que mudou.</p>
+            <pre class="bloco-codigo"><code>git add .
+git commit -m "Ajusta cores do catalogo"</code></pre>
+          </article>
+
+        </div>
+
+        <aside class="aviso">
+          <h3 class="aviso__titulo">Deu conflito no <code class="codigo">git pull</code>?</h3>
+          <p>
+            Isso acontece quando você e o instrutor alteraram as mesmas linhas. Salve o seu trabalho
+            com <code class="codigo">git commit</code> antes de puxar as novidades e, se o aviso
+            aparecer, abra o arquivo marcado: o Git mostra as duas versões e espera que você escolha
+            qual fica.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="rodape">
+    <div class="container rodape__conteudo">
+      <p class="rodape__marca">Ford Enter</p>
+      <p>Material didático da turma de desenvolvimento web.</p>
+      <p><small>Versão inicial da página — acompanhe as atualizações pelo histórico de commits.</small></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
