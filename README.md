@@ -19,7 +19,7 @@ projeto-ford-enter/
 Abra o terminal na pasta onde você guarda seus projetos e execute:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/projeto-ford-enter.git
+git clone https://github.com/lucas-lcm/projeto-ford-enter.git
 cd projeto-ford-enter
 ```
 
